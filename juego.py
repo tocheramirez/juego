@@ -3,12 +3,12 @@ import random
 puntmaquina = 0
 puntjugador = 0
 
-maquina =["piedra", "papel", "tijera"] 
+ opciones=["piedra", "papel", "tijera"] 
 
 while puntmaquina < 3 and puntjugador < 3:
         print(f"\nMarcador es: Jugador {puntjugador} - Maquina {puntmaquina}")
 
-        maquina = random.choice(maquina)
+        maquina = random.choice(opciones)
         jugador = input("Elige piedra, papel o tijera: ").lower()
 
         if jugador not in ["piedra", "papel", "tijera"]:
